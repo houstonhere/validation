@@ -397,8 +397,6 @@ class Validation
         $alias = $attribute->getAlias() ?: $this->resolveAttributeName($attribute);
         $message = $validator->getMessage(); // default rule message
         $messageKeys = [
-            $attributeKey.$this->messageSeparator.$ruleKey,
-            $attributeKey,
             $ruleKey
         ];
 
